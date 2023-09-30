@@ -12,6 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <nav>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">A propos</RouterLink>
     </nav>
   </header>
 
@@ -72,7 +73,7 @@ footer {
   position: absolute;
   bottom: 0;
   height: 100px;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
