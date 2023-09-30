@@ -1,0 +1,89 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
+<template>
+  <header>
+    <figure>
+      <a href="#"><img src="./assets/images/logo-perso-LC.jpg" alt="Logo Laetitia Challant" /></a>
+    </figure>
+
+    <h1 class="borderer">Laetitia Challant</h1>
+
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+    </nav>
+  </header>
+
+  <main>
+    <RouterView />
+  </main>
+
+  <footer>
+    <div>
+      <a href="https://www.linkedin.com/in/laetitia-challant-b73284253/">
+        <img src="./assets/images/linkedin.svg" alt="logo linkedin" />
+      </a>
+
+      <a href="https://github.com/BLaeya"
+        ><img src="./assets/images/square-github.svg" alt="logo gitHub"
+      /></a>
+
+      <a href="#"><img src="./assets/images/square-x-twitter.svg" alt="logo twitter" /></a>
+    </div>
+    <small> Derniere mise à jour le 30/09/2023 à 21h06 <br />Copyright BLaeya 2023 </small>
+  </footer>
+</template>
+
+<style scoped>
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  height: fit-content;
+  font-size: 2rem;
+}
+nav {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+figure {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  flex-basis: 1;
+}
+figure a {
+  padding: 0;
+}
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+small {
+  text-align: center;
+}
+</style>
