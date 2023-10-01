@@ -5,9 +5,7 @@
   font-size: 1.2rem;
 }
 body {
-  margin: auto;
-  min-height: 100vh;
-  width: 70%;
+  margin: 0;
   background: radial-gradient(circle, white, #9db5c0);
   color: #253337;
 }
