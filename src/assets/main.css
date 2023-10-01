@@ -8,7 +8,6 @@ body {
   margin: auto;
   min-height: 100vh;
   width: 70%;
-
   background: radial-gradient(circle, white, #9db5c0);
   color: #253337;
 }
@@ -65,4 +64,8 @@ h3 {
 }
 h4 {
   font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
 }
