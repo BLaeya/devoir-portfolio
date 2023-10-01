@@ -15,6 +15,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">A propos</RouterLink>
         <RouterLink to="/achievements">Réalisations</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/error">Lien cassé</RouterLink>
       </nav>
     </header>
 
@@ -67,7 +69,7 @@ h1 {
 nav {
   flex-basis: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 figure {
   width: 150px;
