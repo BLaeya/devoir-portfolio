@@ -1,11 +1,10 @@
 <script setup>
-import { defineProps } from 'vue'
 const { achievement, reveal, toggleModal } = defineProps(['achievement', 'reveal', 'toggleModal'])
 </script>
 
 <template>
   <div class="container" v-if="reveal">
-    <div class="bloc-modale" v-show="achievement">
+    <div class="bloc-modale">
       <div class="overlay" @click="toggleModal"></div>
       <div class="modale">
         <button @click="toggleModal">x</button>
@@ -14,6 +13,7 @@ const { achievement, reveal, toggleModal } = defineProps(['achievement', 'reveal
         <p>Date de création: {{ achievement.creationDate }}</p>
         <p>Date de dernière révision: {{ achievement.revisionDate }}</p>
         <p>Technologie: {{ achievement.techno }}</p>
+        <a :href="achievement.pdf" target="_blank">Pdf du site</a>
         <a :href="achievement.url" target="_blank"
           ><div class="image" :style="{ backgroundImage: `url(${achievement.image})` }"></div
         ></a>
@@ -56,7 +56,7 @@ const { achievement, reveal, toggleModal } = defineProps(['achievement', 'reveal
   width: 864px;
   border-radius: 10px;
   position: relative;
-  top: 0;
+  top: 10px;
   right: -50px;
 }
 
@@ -75,6 +75,11 @@ h3 {
   width: 864px;
   margin: auto;
   margin-top: 40px;
+}
+a {
+  color: #253337;
+  text-decoration: none;
+  padding: 0 50px;
 }
 p {
   padding: 0 50px;

@@ -1,7 +1,12 @@
 <script setup></script>
 
 <template>
-  <img src="../assets/images/error-404.png" alt="Erreur 404" />
+  <div><img src="../assets/images/error-404.png" alt="Erreur 404" /></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+  display: flex;
+  justify-content: center;
+}
+</style>

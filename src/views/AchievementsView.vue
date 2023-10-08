@@ -38,6 +38,27 @@ function toggleModal(achievement) {
   height: 141px;
   width: 288px;
   background-size: cover;
-  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+li {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image:hover {
+  box-shadow: 8px 5px 5px #253337;
+}
+h3 {
+  text-align: center;
 }
 </style>

@@ -8,11 +8,25 @@ export default [
     creationDate: '14/04/2023',
     revisionDate: '01/09/2023',
     url: 'https://github.com/BLaeya/CV-LB',
+    pdf: 'src/assets/images/CVDevoirPdf.pdf',
     class: 'cv',
     techno: 'HTML et CSS'
   },
   {
     id: 2,
+    image: 'src/assets/images/screenshot-Sabakou-Taiga.png',
+    title: 'Sabakou et Taïga',
+    description:
+      "mon premier site perso, m'a permis de m'entrainer sur un mode clair/sombre avec javascript",
+    creationDate: '06/04/2023',
+    revisionDate: '08/10/2023',
+    url: 'https://github.com/BLaeya/sabakou-taiga',
+    pdf: 'src/assets/images/SabakouTaigaPdf.pdf',
+    class: 'horses',
+    techno: 'HTML, CSS et javaScript'
+  },
+  {
+    id: 3,
     image: 'src/assets/images/screenshot-Calculatrice.png',
     title: 'Calculatrice',
     description:
@@ -20,11 +34,12 @@ export default [
     creationDate: '04/07/2023',
     revisionDate: '04/08/2023',
     url: 'https://github.com/BLaeya/calculatrice-js',
+    pdf: 'src/assets/images/CalculatriceJsPdf.pdf',
     class: 'calculator',
     techno: 'HTML, CSS et JavaScript'
   },
   {
-    id: 3,
+    id: 4,
     image: 'src/assets/images/screenshot-Commentaires.png',
     title: 'Dynamiser un espace commentaires',
     description:
@@ -32,6 +47,7 @@ export default [
     creationDate: '05/08/2023',
     revisionDate: '05/08/2023',
     url: 'https://github.com/BLaeya/DynamiserUnEspaceDeCommentaires_DocumentsDevoir',
+    pdf: 'src/assets/images/DynamiserCommentairesPdf.pdf',
     class: 'comments',
     techno: 'JavaScript'
   }
