@@ -22,12 +22,13 @@ function toggleModal(achievement) {
       :key="achievement.id"
       :selectedAchievement="selectedAchievement"
     >
-      <h3>{{ achievement.title }}</h3>
-      <div
+      <h3
         @click="() => toggleModal(achievement)"
         class="image"
         :style="{ backgroundImage: `url(${achievement.image})` }"
-      ></div>
+      >
+        {{ achievement.title }}
+      </h3>
     </li>
   </ul>
   <TheModal :toggleModal="toggleModal" :achievement="selectedAchievement" :reveal="reveal" />
@@ -35,9 +36,14 @@ function toggleModal(achievement) {
 
 <style scoped>
 .image {
-  height: 141px;
-  width: 288px;
+  height: 282px;
+  width: 576px;
   background-size: cover;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke-color: #253337;
+  -webkit-text-stroke-width: 2px;
+  vertical-align: -webkit-baseline-middle;
 }
 
 ul {
@@ -48,17 +54,10 @@ ul {
   align-content: space-around;
 }
 li {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  width: 600px;
 }
 
 .image:hover {
   box-shadow: 8px 5px 5px #253337;
-}
-h3 {
-  text-align: center;
 }
 </style>

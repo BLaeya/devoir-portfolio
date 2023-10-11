@@ -22,9 +22,6 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/contact" :class="{ 'active-link': $route.path === '/contact' }"
           >Contact</RouterLink
         >
-        <RouterLink to="/error" :class="{ 'active-link': $route.path === '/error' }"
-          >Lien cassé</RouterLink
-        >
       </nav>
     </header>
 
@@ -44,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <a href="#"><img src="./assets/images/square-x-twitter.svg" alt="logo twitter" /></a>
       </div>
-      <small> Derniere mise à jour le 01/10/2023 à 21h09 <br />Copyright BLaeya 2023 </small>
+      <small> Derniere mise à jour le 11/10/2023 à 18h21<br />Copyright BLaeya 2023 </small>
     </footer>
   </div>
 </template>
@@ -79,6 +76,7 @@ nav {
   flex-basis: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 nav a {
   color: #253337;

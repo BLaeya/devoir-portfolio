@@ -13,10 +13,10 @@ const { achievement, reveal, toggleModal } = defineProps(['achievement', 'reveal
         <p>Date de création: {{ achievement.creationDate }}</p>
         <p>Date de dernière révision: {{ achievement.revisionDate }}</p>
         <p>Technologie: {{ achievement.techno }}</p>
-        <a :href="achievement.pdf" target="_blank">Pdf du site</a>
         <a :href="achievement.url" target="_blank"
           ><div class="image" :style="{ backgroundImage: `url(${achievement.image})` }"></div
         ></a>
+        <a :href="achievement.pdf" target="_blank">Version pdf</a>
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@ const { achievement, reveal, toggleModal } = defineProps(['achievement', 'reveal
   width: 864px;
   border-radius: 10px;
   position: relative;
-  top: 10px;
+  top: -10px;
   right: -50px;
 }
 
@@ -79,6 +79,7 @@ h3 {
 a {
   color: #253337;
   text-decoration: none;
+  font-weight: bold;
   padding: 0 50px;
 }
 p {

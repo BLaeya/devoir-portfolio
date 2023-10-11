@@ -25,7 +25,7 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue')
     },
     {
-      path: '/error',
+      path: '/:catchAll(.*)',
       name: 'error',
       component: () => import('../views/ErrorView.vue')
     }

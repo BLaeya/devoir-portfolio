@@ -17,7 +17,7 @@ export default [
     image: 'src/assets/images/screenshot-Sabakou-Taiga.png',
     title: 'Sabakou et Taïga',
     description:
-      "mon premier site perso, m'a permis de m'entrainer sur un mode clair/sombre avec javascript",
+      "mon premier site perso. M'a permis de m'entrainer à javascript en faisant un mode clair/sombre.",
     creationDate: '06/04/2023',
     revisionDate: '08/10/2023',
     url: 'https://github.com/BLaeya/sabakou-taiga',
