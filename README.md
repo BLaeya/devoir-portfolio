@@ -1,6 +1,8 @@
 # devoir-portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+![Accueil - portfolio](docs/portfolio-accueil-ss.png)
+
+![Réalisations portfolio](docs/portfolio-realisations-ss.png)
 
 ## Recommended IDE Setup
 
@@ -33,4 +35,5 @@ npm run build
 ```sh
 npm run lint
 ```
+
 # devoir-portfolio
